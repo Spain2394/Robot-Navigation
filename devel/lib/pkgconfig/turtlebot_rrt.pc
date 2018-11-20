@@ -1,0 +1,8 @@
+prefix=/home/parallels/Robot-Navigation/devel
+
+Name: turtlebot_rrt
+Description: Description of turtlebot_rrt
+Version: 0.0.0
+Cflags: -I/home/parallels/Robot-Navigation/src/turtlebot_rrt/include
+Libs: -L/home/parallels/Robot-Navigation/devel/lib -lturtlebot_rrt
+Requires: roscpp pluginlib costmap_2d base_local_planner nav_core visualization_msgs
