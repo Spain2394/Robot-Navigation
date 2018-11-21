@@ -16,14 +16,14 @@ _Disclaimer:_ Due to persistent errors under time a time constraint I was unable
 ## Running
 **Part I (Hector SLAM):**
 1) run: ```roslaunch spain_a3 my_hector_slam_turtlebot.launch```
-2) run: ```rosbag play rosbags /assignment3_5floor.bag --clock```
+2) In a new terminal run: ```rosbag play rosbags /assignment3_5floor.bag --clock```
 To save the maps for safe keeping in the ```maps``` directory you can run: ```rosrun map_server map_saver -f ~/map/<map_name>```
 3) End processes with cmd + C, and ```killall gzerver```
 
 
 **Part II (RRT and goal pursuit):**
 1) run: ```roslaunch spain_a3 find_goal_in_house.launch```
-2) To see the robot use RRT to navigate towards the default goal run: ```python fetch_goal.py```
+2) To use the RRT algorithm to navigate towards the default goal, open a new terminal and run: ```python fetch_goal.py```
 
 ## Testing
 Once launched you can set the goal by modifying the position array in ```__main__``` the default position is:
