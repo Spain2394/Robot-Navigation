@@ -1,0 +1,8 @@
+prefix=/home/parallels/Robot-Navigation/install
+
+Name: rrt_exploration
+Description: Description of rrt_exploration
+Version: 1.0.0
+Cflags: -I/home/parallels/Robot-Navigation/install/include
+Libs: -L/home/parallels/Robot-Navigation/install/lib 
+Requires: message_runtime
