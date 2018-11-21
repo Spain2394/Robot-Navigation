@@ -31,8 +31,8 @@ Once launched you can set the goal by modifying the position array in ```__main_
 
 
 ## My Simple Server Summary
-My server communicates with action```robot_1/move_base```
-It is also necessary to use frame id ```robot_1/map``` which corresponds to my map coordinate frame. This can be examined by running ```tf echo robot_1/map robot_1/move_base``` which will give you the transformation from the map frame to the move base frame.
+My server: ```fetch_goal.py``` communicates with action```robot_1/move_base```
+and frame id: ```robot_1/map``` which corresponds to my map coordinate frame. This can be examined by running ```tf echo robot_1/map robot_1/move_base``` which will give you the transformation both linear and angular to go from the map frame to the base frame.
 
 This was sourced from: [ROS](http://wiki.ros.org/navigation/Tutorials/SendingSimpleGoals)
 
