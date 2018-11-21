@@ -1,11 +1,11 @@
 # spain_a3
 ### Allen Spain
 ### 11/15/2018
-Use [hector_slam](http://wiki.ros.org/hector_slam) for occupancy grid mappping using data collected using a [HOKUYO(URG-04LX-UG01)](https://www.hokuyo-aut.jp/search/single.php?serial=166) laser range finder on a Turtlebot. [Rapidly Exploring Random Tree RRT*   algorithm](http://paper.ijcsns.org/07_book/201610/20161004.pdf) was used for planning a path towards a goal determined by a service provider.
+Use [hector_slam](http://wiki.ros.org/hector_slam) for occupancy grid mappping using data collected using a [HOKUYO(URG-04LX-UG01)](https://www.hokuyo-aut.jp/search/single.php?serial=166) laser range finder Turtlebot. [Rapidly Exploring Random Tree RRT*   algorithm](http://paper.ijcsns.org/07_book/201610/20161004.pdf) was used for planning a path towards a goal determined by a service provider.
 
 _Disclaimer:_ Due to persistent errors under time a time constraint I was unable to synchronize my code (see Reflections section for more details) in the way that I wanted. So this code comes in three parts.
 1) Implement hector mapping, for SLAM and to build a map using sensor data.
-2) Implement Rapidly exploring Random Tree (RRT) which navigates a predetermined map and navigates towards a goal posted by the service provider.
+2) Implement Rapidly exploring Random Tree (RRT) which navigates a predefined map and navigates towards a goal posted by the service provider.
 
 
 ## Getting Started
