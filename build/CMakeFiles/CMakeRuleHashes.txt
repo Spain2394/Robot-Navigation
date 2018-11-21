@@ -6,6 +6,7 @@ a652c04d8801311ad083c913a5c93fb8 /home/parallels/Robot-Navigation/devel/include/
 d4d1aad2c720c7885bdbf76c3e3e3d09 /home/parallels/Robot-Navigation/devel/include/hector_nav_msgs/GetRecoveryInfo.h
 6aa88eff2eb26a1c6958376d014860be /home/parallels/Robot-Navigation/devel/include/hector_nav_msgs/GetRobotTrajectory.h
 7c7cbf85e8d746b2152a612bbace0d74 /home/parallels/Robot-Navigation/devel/include/hector_nav_msgs/GetSearchPosition.h
+6388318937d1fb4f58deffaee931a199 /home/parallels/Robot-Navigation/devel/include/rrt_exploration/PointArray.h
 68a197721ae74d3f83fed1a853a638e6 /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/hector_mapping/msg/_HectorDebugInfo.py
 d6a72110c8c11dda665a550f074c53a2 /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/hector_mapping/msg/_HectorIterData.py
 ba927c98fe6ca2cea78bd561714230f5 /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/hector_mapping/msg/__init__.py
@@ -15,6 +16,8 @@ ba927c98fe6ca2cea78bd561714230f5 /home/parallels/Robot-Navigation/devel/lib/pyth
 94735dcc85fe2bbd243c862df638a9cf /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/hector_nav_msgs/srv/_GetRobotTrajectory.py
 e94c12ef74c5a1d325823e1b5acb6a6b /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/hector_nav_msgs/srv/_GetSearchPosition.py
 366874bda0d41a99958cd7beac214df8 /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/hector_nav_msgs/srv/__init__.py
+9e7f5f43303d975ff4a5d9a34ffae612 /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/rrt_exploration/msg/_PointArray.py
+a5de307868df640c527b05b1e5dbe99e /home/parallels/Robot-Navigation/devel/lib/python2.7/dist-packages/rrt_exploration/msg/__init__.py
 552ceeeb5a021c3f9adc08fef98f3dca /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/hector_mapping/msg/HectorDebugInfo.lisp
 95e12707911f0222f7060a974701cd35 /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/hector_mapping/msg/HectorIterData.lisp
 439251c18bbb18beb2487aee28e59f88 /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetDistanceToObstacle.lisp
@@ -22,6 +25,7 @@ b774ea79ab44d84551ce175bec9f7f69 /home/parallels/Robot-Navigation/devel/share/co
 9b10dc442d311192dfb7f13ce7532c76 /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRecoveryInfo.lisp
 73a0659a1749a488801abb82bc43d4cb /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRobotTrajectory.lisp
 c48352851d2feff408391982ec3dad6f /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetSearchPosition.lisp
+828bc784e827acda61fe46ea83e19bf4 /home/parallels/Robot-Navigation/devel/share/common-lisp/ros/rrt_exploration/msg/PointArray.lisp
 69047320585078ef6ff74eb7e357d250 /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/hector_mapping/msg/HectorDebugInfo.js
 10c91a1823b5bbc01aba4f8207407f42 /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/hector_mapping/msg/HectorIterData.js
 b531c6a9536b78db16c87aad3f57b671 /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetDistanceToObstacle.js
@@ -29,6 +33,7 @@ e7251619d18382b3ad8e8209d44fa9e6 /home/parallels/Robot-Navigation/devel/share/ge
 689dd802dc5c52ee6f232aacb4fd6685 /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRecoveryInfo.js
 ed501688f329564e02fce5af2a2b7d09 /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRobotTrajectory.js
 ba1d6f65746aa64fdf1aba4be9c6692e /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetSearchPosition.js
+e2b40983da2b93567c3f9c8fe719853d /home/parallels/Robot-Navigation/devel/share/gennodejs/ros/rrt_exploration/msg/PointArray.js
 db3556ad3ec8a0cb53d3674cc4f32bc6 /home/parallels/Robot-Navigation/devel/share/roseus/ros/hector_mapping/manifest.l
 20ce248a86c365a953744a1214010b90 /home/parallels/Robot-Navigation/devel/share/roseus/ros/hector_mapping/msg/HectorDebugInfo.l
 ac63f854b5213b58b5bd533be3c2d643 /home/parallels/Robot-Navigation/devel/share/roseus/ros/hector_mapping/msg/HectorIterData.l
@@ -38,6 +43,8 @@ ac63f854b5213b58b5bd533be3c2d643 /home/parallels/Robot-Navigation/devel/share/ro
 98c33b7b251cc90e71e0ffb26d20ef64 /home/parallels/Robot-Navigation/devel/share/roseus/ros/hector_nav_msgs/srv/GetRecoveryInfo.l
 a2f4d45c6787e9163dee7807aa518041 /home/parallels/Robot-Navigation/devel/share/roseus/ros/hector_nav_msgs/srv/GetRobotTrajectory.l
 c1923eccb320e36f2c9f8f06db861445 /home/parallels/Robot-Navigation/devel/share/roseus/ros/hector_nav_msgs/srv/GetSearchPosition.l
+917bd20c238fb4b9b7fb39a8f1a4497e /home/parallels/Robot-Navigation/devel/share/roseus/ros/rrt_exploration/manifest.l
+d9c3c700cd5d4a232e392c5cd3b70338 /home/parallels/Robot-Navigation/devel/share/roseus/ros/rrt_exploration/msg/PointArray.l
 cafe05fbf7da8bd3477ae8323de27c17 CMakeFiles/clean_test_results
 e289476440ecdbcd08eccf442dc06940 hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorDebugInfo
 45dba1a666a771950870546871cf0b9f hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData
@@ -56,6 +63,12 @@ cc2978ae5db924aa22d1015c2ded59fe hector_slam/hector_nav_msgs/CMakeFiles/hector_n
 cc2978ae5db924aa22d1015c2ded59fe hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp
 cc2978ae5db924aa22d1015c2ded59fe hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs
 cc2978ae5db924aa22d1015c2ded59fe hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py
+69de322705e742981f86b1c553bb4547 rrt_exploration/CMakeFiles/_rrt_exploration_generate_messages_check_deps_PointArray
+11ae3c8c161444dabdfc4f654b2ec348 rrt_exploration/CMakeFiles/rrt_exploration_generate_messages_cpp
+11ae3c8c161444dabdfc4f654b2ec348 rrt_exploration/CMakeFiles/rrt_exploration_generate_messages_eus
+11ae3c8c161444dabdfc4f654b2ec348 rrt_exploration/CMakeFiles/rrt_exploration_generate_messages_lisp
+11ae3c8c161444dabdfc4f654b2ec348 rrt_exploration/CMakeFiles/rrt_exploration_generate_messages_nodejs
+11ae3c8c161444dabdfc4f654b2ec348 rrt_exploration/CMakeFiles/rrt_exploration_generate_messages_py
 d4aeada87cc0059fb76d48413c671234 turtlebot_rrt/CMakeFiles/_run_tests_turtlebot_rrt_gtest_rrt_test
 1a642a5b40f6e2e6b4e375baf99bf05a turtlebot_rrt/CMakeFiles/_run_tests_turtlebot_rrt_gtest_vertex_test
 9a2ff3357a6a2a7715f3c13ade78f254 turtlebot_rrt/CMakeFiles/clean_test_results_turtlebot_rrt
