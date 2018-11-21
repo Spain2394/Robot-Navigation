@@ -10,9 +10,8 @@ _Disclaimer:_ Due to persistent errors under time a time constraint I was unable
 
 ## Getting Started
 1) download ```spain_a3```, ```rrt_exploration_tutorials``` at [https://github.com/hasauino/rrt_exploration_tutorials](https://github.com/hasauino/rrt_exploration_tutorials) and ```hector_slam``` at [https://github.com/tu-darmstadt-ros-pkg/hector_slam](https://github.com/tu-darmstadt-ros-pkg/hector_slam)
-2)
-3) place in ```[catkin_ws]/src``` folder.
-4) run catkin_make, followed by ```source devel setup.bash``` to build all packages within your ```catkin_ws``` and make your ```catkin_make``` visible.
+2) place in ```[catkin_ws]/src``` folder.
+3) run catkin_make, followed by ```source devel setup.bash``` to build all packages within your ```catkin_ws``` and make your ```catkin_make``` visible.
 
 ## Running
 **For part I (Hector SLAM):**
