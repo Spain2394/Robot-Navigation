@@ -47,4 +47,4 @@ I was not able to sync up my map with the rrt_exploration algorithm I would real
 ## References
 * RRT Algorithm: [github.com/hasauino](https://github.com/hasauino)
 * Paper on RRT from [Hassan Umari et al.](https://ieeexplore.ieee.org/document/8202319)
-* [Turtlebot Tutorial](http://learn.turtlebot.com)
+* [Turtlebot Tutorials](http://learn.turtlebot.com)
