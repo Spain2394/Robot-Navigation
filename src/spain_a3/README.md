@@ -29,7 +29,7 @@ Once launched you can set the goal by modifying the position array in ```__main_
 My server: ```fetch_goal.py``` communicates with action```robot_1/move_base```
 and frame id: ```robot_1/map``` which corresponds to my map coordinate frame. This can be examined by running ```tf echo robot_1/map robot_1/move_base``` which will give you the transformation both linear and angular to go from the map frame to the base frame.
 
-For information on ROS server: [ROS](http://wiki.ros.org/navigation/Tutorials/SendingSimpleGoals)
+For information on ROS service provider: [ROS](http://wiki.ros.org/navigation/Tutorials/SendingSimpleGoals)
 
 ## References
 * RRT Algorithm: [github.com/hasauino](https://github.com/hasauino)
