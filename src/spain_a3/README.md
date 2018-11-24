@@ -13,7 +13,7 @@ Use [hector_slam](http://wiki.ros.org/hector_slam) for occupancy grid mappping u
 1) run: ```roslaunch spain_a3 my_hector_slam_turtlebot.launch```
 2) In a new terminal run: ```rosbag play rosbags/assignment3_5floor.bag --clock```
 To save the maps for safe keeping in the ```maps``` directory you can run: ```rosrun map_server map_saver -f ~/map/<map_name>```
-3) End processes with cmd + C, and ```killall gzerver```
+3) End processes with Cmd/Ctrl + C, and ```killall gzerver```
 
 
 **Part II (RRT and goal pursuit):**
