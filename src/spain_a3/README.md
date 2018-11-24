@@ -6,7 +6,7 @@ Use [hector_slam](http://wiki.ros.org/hector_slam) for occupancy grid mappping u
 ## Getting Started
 1) download ```spain_a3```, ```rrt_exploration_tutorials``` at [https://github.com/hasauino/rrt_exploration_tutorials](https://github.com/hasauino/rrt_exploration_tutorials) and ```hector_slam``` at [https://github.com/tu-darmstadt-ros-pkg/hector_slam](https://github.com/tu-darmstadt-ros-pkg/hector_slam)
 2) place in ```[catkin_ws]/src``` folder.
-3) run catkin_make, followed by ```source devel setup.bash``` to build all packages within your ```catkin_ws``` and make your ```catkin_make``` visible.
+3) run catkin_make, followed by ```source devel/setup.bash``` to build all packages within your ```catkin_ws``` and make your ```catkin_make``` visible.
 
 ## Running
 **Part I (Hector SLAM):**
